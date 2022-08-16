@@ -18,7 +18,10 @@
   },
   "homepage": "https://github.com/Jayeshgoyal0308/WeatherAPI-Project#readme",
   "dependencies": {
+    "axios": "^0.27.2",
     "body-parser": "^1.20.0",
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "node-fetch": "^3.2.10",
+    "nodemon": "^2.0.19"
   }
 }
