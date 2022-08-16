@@ -25,6 +25,7 @@ app.post('/home',(req,res) => {
 
     console.log(req.body.cityNames);
     let city_names = req.body.cityNames;
+    if(!Array.isArray(city_names)) city_names = [city_names]
     let url_list = [];
     city_names.forEach((city_name)=>{
         
@@ -46,7 +47,6 @@ app.post('/home',(req,res) => {
             console.log(resp.data);
             result += "<h1>The temprature in "+ resp.data.name +" is " +resp.data.main.temp +"C. <h1>"
         })
-        city_names = [];
         res.send(result);
       })
     )
